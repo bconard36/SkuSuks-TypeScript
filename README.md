@@ -13,8 +13,45 @@ Actively refactoring. Not yet feature-complete or production ready.
 
 # Folder List
 
-public: houses all public files to be served - images: houses all relevant background, logo, product, and cycler images for all components
-src: parent folder for components, stylesheets, and hooks - components: parent folder for all components (excluding Shopify specific and Root) - Accessories.jsx - App.jsx - Apparel.jsx - Cart.tsx - Contact.tsx - Donate.tsx - Footer.tsx - Home.tsx - ImageCycler.tsx - Mission.tsx - NavMenu.tsx - NewDrops.tsx - PreOrder.tsx - ProductCard.jsx - Products.jsx - RadioButton.tsx - data: parent folder for JSON data used for testing - db.json - hooks: parent folder for custom, reusable hooks - useClickOutside.ts - useFetch.ts - Shopify: parent folder for Shopify Storefront API - ShopifyClient.js (uses .env variables for domain, version, and token values) - useShopifyProducts.js (custom query and hook to gather product data from Shopify) - styles: houses the stylesheets for the program - cart.css - contact.css - imageCycler.css - index.css - navbar.css - notFound.css - pages.css - textStyles.css - main.jsx - types.ts
+public: houses all public files to be served 
+  - images: houses all relevant background, logo, product, and cycler images for all components
+src: parent folder for components, stylesheets, and hooks
+  - components: parent folder for all components (excluding Shopify specific and Root)
+    - Accessories.jsx
+    - App.jsx
+    - Apparel.jsx
+    - Cart.tsx
+    - Contact.tsx
+    - Donate.tsx
+    - Footer.tsx
+    - Home.tsx
+    - ImageCycler.tsx
+    - Mission.tsx
+    - NavMenu.tsx
+    - NewDrops.tsx
+    - PreOrder.tsx
+    - ProductCard.jsx
+    - Products.jsx
+    - RadioButton.tsx
+ - data: parent folder for JSON data used for testing
+   - db.json
+- hooks: parent folder for custom, reusable hooks
+  - useClickOutside.ts
+    - useFetch.ts
+- Shopify: parent folder for Shopify Storefront API
+  - ShopifyClient.js (uses .env variables for domain, version, and token values)
+    - useShopifyProducts.js (custom query and hook to gather product data from Shopify)
+- styles: houses the stylesheets for the program
+  - cart.css
+  - contact.css
+  - imageCycler.css
+  - index.css
+  - navbar.css
+  - notFound.css
+  - pages.css
+  - textStyles.css
+  - main.jsx
+  - types.ts
 .gitignore
 .esling.config.js
 index.html
