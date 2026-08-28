@@ -1,11 +1,11 @@
 /**
- * Apparel component
- * Loads json product components using a custom hook (useFetch)
+ * Renders the apparel product page using product data
+ * from the local JSON database.
  */
 import Products from "./Products";
-// import useProductList from "./useShopifyProducts";
-// import useFetch from "../Hooks/useFetch";
 import data from "../data/db.json";
+// Shopify Imports
+// import useProductList from "./useShopifyProducts";
 
 type Product = {
   image: string;
@@ -14,8 +14,6 @@ type Product = {
 };
 
 const Apparel = () => {
-  // const { error, isLoading, data: products } = useProductList("apparel", 5)
-  // const { error, isLoading, data: products } = useFetch("http://localhost:8000/products");
   const products: Array<Product> = data.products;
 
   // Product Card can be a reusable component since both apparel and accessory pages use
