@@ -1,8 +1,3 @@
-/**
- * Product component for SkuSuks apparel and accessory pages
- * Renders product cards for each product
- */
-
 import ProductCard from "./ProductCard";
 
 type Product = {
