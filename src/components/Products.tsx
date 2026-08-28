@@ -5,7 +5,17 @@
 
 import ProductCard from "./ProductCard";
 
-const Products = ({ products = [] }) => {
+type Product = {
+  image: string;
+  name: string;
+  price: string;
+};
+
+type ProductsProps = {
+  products: Product[];
+};
+
+const Products = ({ products }: ProductsProps) => {
   // Products maps over the products array and renders one ProductCard per item.
   // Refactor ProductCard to live in its own file. Currently:
   // ProductCard lives within this map() - each group of img, h3, p, and button make up the ProductCard

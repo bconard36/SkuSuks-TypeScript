@@ -6,10 +6,8 @@
 
 type Product = {
   image: string;
-  alt: string;
-  title: string;
   name: string;
-  price: number;
+  price: string;
 };
 
 type ProductCardProps = {
@@ -27,11 +25,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
   return (
     <div className="product">
       <div className="product-image-container">
-        <img
-          src={product.image}
-          alt={product.alt || product.title}
-          className="product-image"
-        />
+        <img src={product.image} alt={product.name} className="product-image" />
       </div>
 
       <h3>{product.name}</h3>
