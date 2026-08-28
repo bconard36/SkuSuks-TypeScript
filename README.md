@@ -43,6 +43,11 @@ Keeping an honest, dated record of what got done and what got learned, rather th
   - Avoiding type-name collisions between a component and its own props type.
   - The `Controller` render-prop shape and why it replaces the manually tracked `checked`/`onChange` state.
   - Replacing `any` with a proper function signature `(value: string) => void` once the real shape of a prop is understood.
+  - Introduced to TypeScript generics while refactoring useClickOutside:
+    - Original hook only worked on `HTMLDivElement`, hardcoded — not reusable for other element types.
+    - Refactored to accept a generic `T`, using React's `RefObject<T>` instead of a custom ref type.
+    - Learned about generic constraints (T extends HTMLElement) to keep methods like .contains() available without locking the hook to one specific element.
+    - Hit and resolved a subtle mismatch between a constrained generic and React's ref type always allowing null — a good example of a "small fix, real understanding required" bug.
 
 # Tools Used
 
