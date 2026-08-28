@@ -1,11 +1,11 @@
 /**
- * Custom Hook to close a menu when a click event occurs outside the element
+ * Custom Hook that invokes a callback when a click occurs outside the referenced HTML element
+ *
+ * Uses a TypeScript generic to support any HTMLElement type.
  */
 
 import { useEffect, RefObject } from "react";
 
-// Change Function declaraion to something more specific
-// State management? Boolean Toggle?
 const useClickOutside = <T extends HTMLElement>(
   ref: RefObject<T | null>,
   callback: () => void,
