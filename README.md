@@ -98,7 +98,6 @@ Keeping an honest, dated record of what got done and what got learned, rather th
 
 # Known Limitations
 
-- Some components still need to be converted from JSX to TSX.
 - The "Other" donation amount option doesn't yet have a conditional text input for a custom value — planned as a follow-up
 - Shopify credentials from the client are still pending: product data is currently placeholder/JSON based
 - A full styling pass is planned once the TypeScript refactor is further along
