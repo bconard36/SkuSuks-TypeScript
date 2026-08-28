@@ -13,7 +13,7 @@ const NavMenu = () => {
 
   useEffect(() => {
     setIsOpen(false);
-  }, [location.pathname]);
+  }, [location.pathname, location.key]);
 
   return (
     <div ref={menuRef} className="top-nav">
