@@ -10,6 +10,8 @@ import "./styles/notFound.css";
 import "./styles/cart.css";
 import App from "./components/App";
 
+// Exclamation point below is the non-null assertion operator
+// It's me telling the compiler 'trust me, I know this can't be null here
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <App />
