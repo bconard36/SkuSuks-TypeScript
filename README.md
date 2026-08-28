@@ -52,15 +52,16 @@ src: parent folder for components, stylesheets, and hooks
   - textStyles.css
   - main.jsx
   - types.ts
-.gitignore
-.esling.config.js
-index.html
-package.json
-package-lock.json
-README.md
-tsconfig.json
-tsconfig.node.json
-vite.config.ts
+
+- .gitignore
+- .esling.config.js
+- index.html
+- package.json
+- package-lock.json
+- README.md
+- tsconfig.json
+- tsconfig.node.json
+- vite.config.ts
 
 # Progress Log
 
