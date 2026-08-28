@@ -9,7 +9,7 @@ import useClickOutside from "../hooks/useClickOutside";
 const NavMenu = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false); // State replaces toggleNav as what controls the open/closed state
   const location = useLocation();
-  const menuRef = useRef(null);
+  const menuRef = useRef<HTMLDivElement>(null);
   useClickOutside(menuRef, () => setIsOpen(false));
 
   useEffect(() => {
