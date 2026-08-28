@@ -51,7 +51,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 70%;
+  width: 90%;
   background-color: rgba(255, 255, 255, 0.875);
   padding-bottom: 20px;
   border-radius: 8px;
@@ -74,7 +74,7 @@
 
 .product p {
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-family: "Libertinus Serif Display", system-ui;
   padding: 5px;
 }
