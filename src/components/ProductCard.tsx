@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 type Product = {
   image: string;
   name: string;
@@ -36,8 +38,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
                 ? `${product.price?.amount} ${product.price?.currencyCode}`
                 : "Price Unavailable"}
             </p> */}
-
-      <button className="order-button">Order Now</button>
+      <Link to="/cart">
+        <button className="order-button">Order Now</button>
+      </Link>
     </div>
   );
 };
