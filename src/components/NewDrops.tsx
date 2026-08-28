@@ -1,10 +1,11 @@
-import { useState } from "react";
+/**
+ * Renders the new drops page with an image carousel
+ */
 import ImageCycler from "./ImageCycler";
 import { ImageItem } from "../types";
 
 const NewDrops = () => {
-  // Store hero images for home page cycler
-  const [newDrops] = useState<ImageItem[]>([
+  const newDrops: ImageItem[] = [
     {
       src: "../../Images/newDrop1.jpg",
       alt: "A collection of T-Shirts hanging in a store, with only the front in focus.",
@@ -15,7 +16,7 @@ const NewDrops = () => {
       alt: "A young woman sitting in a chair smiling with her limbs stretched out holding clothes.",
       id: 2,
     },
-  ]);
+  ];
 
   return (
     <div>

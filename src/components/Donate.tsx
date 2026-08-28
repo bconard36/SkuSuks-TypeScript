@@ -1,3 +1,6 @@
+/**
+ * Renders the donation page with selectable donation amounts
+ */
 import { useForm, Controller } from "react-hook-form";
 import RadioButton from "./RadioButton";
 
@@ -12,6 +15,10 @@ const Donate = () => {
     },
   });
 
+  /**
+   * Handles donation form submission
+   * @param data - selected donation amount
+   */
   const onSubmit = (data: DonationFormData) => {
     console.log(data.donation);
   };

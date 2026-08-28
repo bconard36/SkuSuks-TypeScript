@@ -1,13 +1,12 @@
 /**
- * NavMenu component for SkuSuks application
- * @returns NavMenu component
+ * Renders the application's navigation menu with links, cart nav, and responsive menu controls
  */
 import { Link, useLocation } from "react-router";
 import { useState, useEffect, useRef } from "react";
 import useClickOutside from "../hooks/useClickOutside";
 
 const NavMenu = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false); // State replaces toggleNav as what controls the open/closed state
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const location = useLocation();
   const menuRef = useRef<HTMLDivElement>(null);
   useClickOutside(menuRef, () => setIsOpen(false));

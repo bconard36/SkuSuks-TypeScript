@@ -1,3 +1,6 @@
+/**
+Renders the contact page and handles form validation and submission.
+*/
 import { Link } from "react-router";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -10,13 +13,6 @@ type ContactFormData = {
 };
 
 const Contact = () => {
-  /**
-   * react-hook-form controls for the Contact form
-   * @property {Function} register - Registers an input field for validation/tracking
-   * @property {Function} handleSubmit - Wraps onSubmit with validation
-   * @property {Object} formState - Contains errors for invalid inputs
-   * @property {Function} reset - Resets the form to defaultValues
-   */
   const {
     register,
     handleSubmit,
@@ -32,13 +28,13 @@ const Contact = () => {
   });
 
   /**
-   * @type {[Boolean, Function]} - Controls whether the success message is showing
+   * @type {[Boolean, Function]} - Controls visibility of the form submission success message
    */
   const [showSuccess, setShowSuccess] = useState<boolean>(false);
 
   /**
-   * Handles form submission
-   * @param {Object} data - form data collected by react hook form
+   * Handles successful form submission and resets the form
+   * @param {Object} data - validated contact form data
    */
 
   const onSubmit = (data: ContactFormData) => {
@@ -50,9 +46,7 @@ const Contact = () => {
     reset();
   };
 
-  /**
-   * STILL NEED TO STYLE INPUT SPECIFIC ERROR MESSAGES
-   */
+  // TODO: Style individual input error messages
   return (
     <div className="contact-container">
       {showSuccess && (

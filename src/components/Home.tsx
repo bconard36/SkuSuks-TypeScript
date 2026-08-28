@@ -1,3 +1,7 @@
+/**
+ * Renders the home page with image cycler and mission components
+ */
+
 import ImageCycler from "./ImageCycler";
 import Mission from "./Mission";
 import { ImageItem } from "../types";

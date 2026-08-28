@@ -1,9 +1,3 @@
-/**
- * Radio Button Component Constructor
- * @param { Object }  - A deconstructed Radio Button element's parameters
- * @returns A dynamic radio button component
- */
-
 type RadioButtonProps = {
   label: string;
   name: string;
@@ -12,6 +6,17 @@ type RadioButtonProps = {
   onChange: (value: string) => void;
 };
 
+/**
+
+* Renders a reusable controlled radio button.
+*
+* @param label - Text displayed alongside the radio button.
+* @param name - Name shared by the radio button group.
+* @param value - Value associated with the radio button.
+* @param checked - Whether the radio button is currently selected.
+* @param onChange - Callback invoked when the radio button is selected.
+  */
+
 const RadioButton = ({
   label,
   name,
@@ -19,12 +24,8 @@ const RadioButton = ({
   checked,
   onChange,
 }: RadioButtonProps) => {
-  // Generate unique ID to link label and input
   const id = `${name}-${value}`;
 
-  // Donate parent component knows which value was clicked
-  // onChange here can be a plain no arg callback () => void
-  // Parent's version of callback closes over a specific value for that instance
   return (
     <div>
       <label htmlFor={id} className="donation-label">
@@ -34,7 +35,6 @@ const RadioButton = ({
           id={id}
           name={name}
           value={value}
-          // Controlled logic - evaluated as true/false based on state
           checked={checked}
           onChange={() => onChange(value)}
         />

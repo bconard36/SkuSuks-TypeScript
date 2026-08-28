@@ -1,10 +1,12 @@
-import { useState } from "react";
+/**
+ * Renders the pre order page with an image carousel
+ */
+
 import ImageCycler from "./ImageCycler";
 import { ImageItem } from "../types";
 
 const PreOrder = () => {
-  // Store hero images for home page cycler
-  const [preOrders] = useState<ImageItem[]>([
+  const preOrders: ImageItem[] = [
     {
       src: "../../Images/preOrder1.jpg",
       alt: "A black and white picture of T-Shirts hanging in front of a painted wall.",
@@ -20,7 +22,7 @@ const PreOrder = () => {
       alt: "A young man wearing all black with a ski mask standing on railroad tracks.",
       id: 3,
     },
-  ]);
+  ];
 
   return (
     <div>

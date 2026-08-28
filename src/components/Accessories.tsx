@@ -15,9 +15,6 @@ type Product = {
 
 const Accessories = () => {
   const products: Array<Product> = data.accessories;
-
-  // Product Card can be a reusable component since both apparel and accessory pages use
-
   return (
     <div>
       <div className="header-container">

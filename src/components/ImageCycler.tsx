@@ -1,18 +1,19 @@
 import { useState } from "react";
 import { ImageItem } from "../types";
 
+/**
+ * Renders an image carouosel with controls for navigating between images
+ * @param images - array of images to display in the carousel
+ */
 const ImageCycler = ({ images }: { images: ImageItem[] }) => {
-  // Store the currentIndex and setCurrentIndex() method using state
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Next Image Logic (right arrow)
   const goNext = () => {
     setCurrentIndex((currentIndex + 1) % images.length);
   };
 
-  // Previous Image Logic (left arrow)
   const goPrev = () => {
-    // Protect against negative indices
+    // Wrap to the last image when navigating backward from the first
     if (currentIndex - 1 < 0) {
       setCurrentIndex(images.length - 1);
     } else {

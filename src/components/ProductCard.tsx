@@ -1,9 +1,3 @@
-/**
- * Product Card component
- * @param {JSON} product - single product object (apparel or accessory item)
- * @returns A product card element to be rendered in the parent components
- */
-
 type Product = {
   image: string;
   name: string;
@@ -14,6 +8,10 @@ type ProductCardProps = {
   product: Product;
 };
 
+/**
+ * Renders a product card displaying product information and an order
+ * @param product - product information to display
+ */
 const ProductCard = ({ product }: ProductCardProps) => {
   // const store = process.env.REACT_APP_STORE_DOMAIN;
 

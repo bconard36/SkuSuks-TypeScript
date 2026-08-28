@@ -1,9 +1,9 @@
 /**
- * Footer component with social links for SkuSuks application
+ * Footer component
  */
 
 import { Link } from "react-router";
-
+// TODO: Remove dead links from footer
 const Footer = () => {
   return (
     <footer>
