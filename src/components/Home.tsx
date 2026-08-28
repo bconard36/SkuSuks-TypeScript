@@ -1,11 +1,10 @@
-import { useState } from "react";
 import ImageCycler from "./ImageCycler";
 import Mission from "./Mission";
 import { ImageItem } from "../types";
 
 const Home = () => {
   // Store hero images for home page cycler
-  const [heroImgs] = useState<ImageItem[]>([
+  const heroImgs: ImageItem[] = [
     {
       src: "../../Images/skusuks_beach_day.png",
       alt: "A young man standing with his hands in pockets on a beach.",
@@ -21,7 +20,7 @@ const Home = () => {
       alt: "A young man facing the beach with his back to the camera at dusk.",
       id: 3,
     },
-  ]);
+  ];
 
   return (
     <>
