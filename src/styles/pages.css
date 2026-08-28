@@ -1,0 +1,428 @@
+/* ===============================================
+    Style Rules for Different Pages/Routes
+    ===============================================*/
+
+/*  ===============================================
+    Style Rules for Mission Statement on Home Page 
+    ===============================================*/
+.mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.mission-statement-container {
+  background: #000;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.mission-statement-container p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  padding: 10px 5px;
+  font-family: "Libertinus Serif Display", system-ui;
+  font-weight: normal;
+  width: 100%;
+  max-width: 100%;
+  text-wrap: balance;
+  margin: 10px auto;
+}
+
+/*  ===============================================
+    Style Rules for Accessory and Apparel Pages
+    ===============================================*/
+.product-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 10px;
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.875);
+  padding-bottom: 20px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.product-container > .product {
+  align-self: stretch;
+}
+
+.product-image-container {
+  border-radius: 8px;
+  width: 90%;
+  padding: 20px;
+}
+
+.product p {
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-family: "Libertinus Serif Display", system-ui;
+  padding: 5px;
+}
+
+/* div:has(.product) {
+  padding: 10px;
+} */
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3);
+}
+
+.order-button {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Pridi", serif;
+  width: 50%;
+  font-size: 1.1rem;
+  margin: 5px auto;
+}
+
+/*  ===============================================
+    Style Rules for Donate Page
+    ===============================================*/
+/* iOS and macOS Safari-specific resets for form elements */
+fieldset,
+legend,
+label,
+input {
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+}
+
+.donate-hero-image-container {
+  max-width: 400px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.donate-hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#donation-legend {
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Libertinus Serif Display", serif;
+  margin: 10px auto;
+  background: #000;
+  padding: 10px 20px;
+}
+
+.donate-statement-container {
+  background: #000;
+  max-width: 400px;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.donate-statement-container p {
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 10px auto;
+  font-family: "Libertinus Serif Display", system-ui;
+  font-weight: normal;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 100%;
+  text-wrap: balance;
+}
+
+.donation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 10px;
+  background: #000;
+  opacity: 0.95;
+}
+
+/* Style Rules for Donate Radio Buttons */
+.donation-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background: #000;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  margin: 10px auto;
+  border: none;
+}
+
+/* Donate Button */
+.btn-donate {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0 auto;
+  min-width: 120px;
+  min-height: 44px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Libertinus Serif Display", serif;
+  letter-spacing: 1px;
+  background-size: 280% auto;
+  background-image: linear-gradient(
+    325deg,
+    #0f0f0f 0%,
+    #3b3b3b 55%,
+    #0f0f0f 90%
+  );
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.donate-button-container {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reset Safari's default legend styles */
+.donation-selection {
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+  border: none;
+  min-width: 0;
+}
+
+#donation-legend {
+  -webkit-margin-after: 0;
+  -webkit-margin-before: 0;
+  margin-bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Safari flexbox alignment fix */
+.donation-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #000;
+  width: 100%;
+}
+
+/* Safari label and input spacing fixes */
+.donation-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  font-family: "Pridi", serif;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  width: 100px;
+  text-align: center;
+  max-width: 100px;
+  border-radius: 4px;
+}
+
+.donation-label input[type="radio"] {
+  margin: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  cursor: pointer;
+}
+
+/* Style Rules for Tablet Viewport */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Mission Statement */
+  .mission-statement-container {
+    width: 80vw;
+    max-width: 600px;
+  }
+
+  .mission-statement-container p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    width: 100%;
+    max-width: 100%;
+    text-wrap: balance;
+  }
+
+  /* Accessory and Apparel */
+  .product-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: min(90vw, 1000px);
+    margin: 0 auto;
+  }
+
+  .product {
+    flex: 1 1 300px;
+    max-width: 340px;
+  }
+
+  .product p {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+
+  .product-image-container {
+    width: 90%;
+    height: auto;
+    padding: 24px;
+  }
+
+  /* Donate */
+  .donate-hero-image-container {
+    max-width: 600px;
+  }
+
+  .donate-hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .donate-statement-container {
+    width: 70vw;
+    max-width: 500px;
+  }
+
+  .donate-statement-container p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    max-width: 700px;
+    text-wrap: balance;
+  }
+
+  #donation-legend {
+    font-size: 1.25rem;
+  }
+}
+
+/* Style Rules for Desktop Viewport */
+@media (min-width: 1024px) {
+  /* Mission Statement */
+  .mission-statement-container {
+    width: 70vw;
+    max-width: 800px;
+  }
+
+  .mission-statement-container p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    width: 100%;
+    max-width: 800px;
+    text-wrap: balance;
+  }
+
+  /* Accessory and Apparel */
+  .product-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: min(90vw, 1200px);
+    margin: 0 auto;
+  }
+
+  .product {
+    flex: 1 1 30%;
+    max-width: 360px;
+  }
+
+  .product p {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .product-image-container {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+
+  /* Donate */
+  .donate-hero-image-container {
+    width: 75vw;
+    max-width: 900px;
+  }
+
+  .donate-hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .donate-statement-container {
+    width: 70vw;
+    max-width: 700px;
+  }
+
+  .donate-statement-container p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    max-width: 800px;
+    text-wrap: balance;
+  }
+
+  #donation-legend {
+    font-size: 1.5rem;
+  }
+
+  .donation-selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .donation-container {
+    width: 75vw;
+    max-width: 900px;
+  }
+}

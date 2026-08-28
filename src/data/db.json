@@ -1,0 +1,42 @@
+{
+    "products": [
+        {
+            "image": "../Images/skusuks_tshirt_beige.jpeg",
+            "name": "Product 1",
+            "price": "XX.xx"
+        },
+        {
+            "image": "../Images/skusuks_tshirt_camo.jpeg",
+            "name": "Product 2",
+            "price": "XX.xx"
+        },
+        {
+            "image": "../Images/skusuks_tshirt_black.png",
+            "name": "Product 3",
+            "price": "XX.xx"
+        },
+        {
+            "image": "../Images/skusuks_tshirt_beige_2.jpeg",
+            "name": "Product 4",
+            "price": "XX.xx"
+        }
+    ],
+
+    "accessories": [
+        {
+            "image": "../Images/skusuks_hat_camo.jpeg",
+            "name": "Accessory 1",
+            "price": "XX.xx"
+        },
+        {
+            "image": "../Images/skusuks_hat_orange_dual.jpeg",
+            "name": "Accessory 2",
+            "price": "XX.xx"
+        },
+        {
+            "image": "../Images/skusuks_hat_black_dual.jpeg",
+            "name": "Accessory 3",
+            "price": "XX.xx"
+        }
+    ]
+}

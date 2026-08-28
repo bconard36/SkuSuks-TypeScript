@@ -1,0 +1,73 @@
+/* Mobile Viewport Style Rules */
+
+/* Style Rules for Global Font Family and Style */
+h1, h2, h3, #contact-header {
+  font-family: "Pridi", serif;
+  font-style: normal;
+}
+
+/* Base Style Rules for Text Elements */
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h2, h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Font Style Rules for Buttons */
+button {
+  font-family: "Libertinus Serif Display", serif;
+  font-weight: 500;
+}
+
+/* Style Rules for Page Headers */
+.header-container {
+  background: #000;
+  max-width: 400px;
+  width: 90%;
+  margin: 0 auto 20px auto;
+  border-radius: 8px;
+}
+
+.header-container h3 {
+  color: #FFF;
+  background: #000;
+  padding: 20px 20px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.product h3 {
+  color: #FFF;
+  background: #000;
+  text-align: center;
+  margin: 5px auto;
+  padding: 10px 10px;
+  border-radius: 4px;
+  width: 60%;
+  font-size: 1.25rem;
+}
+
+/* Style Rules for Tablet Viewport */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-container h3, .product h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+/* Style Rules for Desktop Viewport */
+@media (min-width: 1024px) {
+  .header-container h3, .product h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+}

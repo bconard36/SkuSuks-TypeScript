@@ -1,0 +1,128 @@
+/* Style Rules for Contact Component */
+.contact-container {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.contact-form-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+}
+
+fieldset {
+    border: none;
+}
+
+.contact-header-container {
+  background: #000;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#form-graphic {
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  padding-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #000;
+  border: 2px solid #FFF;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group label {
+  color: #FFF;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.contact-form input, .contact-form textarea {
+  font-family: "Libertinus Serif Display", serif;
+  width: 100%;
+  max-width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #FFF;
+  color: #000;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+  color: #CCC;
+  font-size: 1.1rem;
+}
+
+/* Submit Button */
+#submit {
+  background-color: #FFF;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: background 0.2s;
+  display: block;
+  margin: 40px auto 0 auto;
+  width: 60%;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+#submit:hover {
+  background-color: #CCC;
+}
+
+
+/* Style Rules for Tablet Viewport */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact-form-container {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  #form-graphic {
+    max-width: 60%;
+  }
+
+  .contact-form input::placeholder, .contact-form textarea::placeholder, #submit, .form-group label {
+    font-size: 1.25rem;
+  }
+}
+
+/* Style Rules for Desktop Viewport */
+@media (min-width: 1024px) {
+  .contact-form-container {
+    width: 70%;
+    max-width: 700px;
+  }
+
+  .contact-form input::placeholder, .contact-form textarea::placeholder, #submit, .form-group label {
+    font-size: 1.345rem;
+  }
+
+}

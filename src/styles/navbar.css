@@ -1,0 +1,118 @@
+/* Style Rules for Nav Bar */
+/* Fixed Size Across All Viewports - scales dynamically */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  margin: 0;
+  padding: 8px 10px;
+  box-sizing: border-box;
+}
+
+/* Hero Image */
+.top-nav .logo img {
+  max-height: 50px;
+  object-fit: contain;
+}
+
+/* Hamburger Icon */
+.top-nav .nav-toggle {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  /* iOS Safari tap highlight fix */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-nav .nav-toggle svg {
+  width: 30px;
+  height: 30px;
+  stroke: #FFF;
+  fill: none;
+  pointer-events: none;
+}
+
+/* Cart Icon */
+.top-nav .cart {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* iOS Safari tap highlight fix */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.cart {
+  position: relative;
+}
+
+.top-nav .cart svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 1px;
+  width: 30px;
+  height: 30px;
+  fill: white;
+  stroke: white;
+  transform: translateY(4.5px);
+  pointer-events: none;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 65px;
+  left: 0;
+  width: 80%;
+  background-color: #000;
+  border-radius: 0 0 8px 8px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 9;
+}
+
+.nav-menu[hidden] {
+  display: none;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: background 0.2s;
+}
+
+.nav-menu li a:hover {
+  background-color: #222;
+  border-radius: 4px;
+}

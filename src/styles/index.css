@@ -1,0 +1,158 @@
+/* 
+  Base structural style rules for SkuSuks application.
+  Contains style rules for the following elements: 
+    - html, main, body, app, footer
+*/
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&display=swap");
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Style Rules */
+/* Fixed Background across different OS's */
+
+/* General Page Rules */
+html,
+body,
+#root {
+  min-height: 100dvh; /* For mobile viewport height issues, specifically iOS */
+  max-width: 100dvw;
+}
+
+body {
+  font-family: "Libertinus Serif Display", serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-image: url("../../public/Images/HSW_Logo2.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 200px 200px;
+  opacity: 1;
+}
+
+main {
+  flex: 1;
+  padding-top: 80px;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style Rules for Main Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  margin: 20px auto 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Style Rules for Footer */
+.footer {
+  width: 100%;
+  min-width: 0;
+}
+
+footer {
+  background: #000;
+  margin-top: auto;
+  width: 100%;
+}
+
+footer h2 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 2%;
+}
+
+footer p {
+  font-size: 0.75rem;
+  font-family: "Pridi", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+#socials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  justify-items: center;
+  align-items: center;
+}
+
+#socials svg {
+  fill: #fff;
+  max-width: 80px;
+  width: 15vw;
+  max-width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+
+#x-icon {
+  transform: scale(0.8);
+  transform-origin: center;
+}
+
+/* Style Rules for Tablet Viewport */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mission-statement-container {
+    width: 80vw;
+    max-width: 600px;
+  }
+
+  .mission-statement-container p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    width: 100%;
+    max-width: 100%;
+    text-wrap: balance;
+  }
+}
+
+/* Style Rules for Desktop Viewport */
+@media (min-width: 1024px) {
+  .mission-statement-container {
+    width: 70vw;
+    max-width: 800px;
+  }
+
+  .mission-statement-container p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    width: 100%;
+    max-width: 800px;
+    text-wrap: balance;
+  }
+}
