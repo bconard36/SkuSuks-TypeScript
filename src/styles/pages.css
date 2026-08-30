@@ -164,6 +164,7 @@ input {
 .donation-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   border: 3px solid #fff;
@@ -177,18 +178,6 @@ input {
 }
 
 /* Style Rules for Donate Radio Buttons */
-.donation-selection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  background: #000;
-  width: 100%;
-  margin: 0;
-  padding-bottom: 20px;
-  margin: 10px auto;
-  border: none;
-}
 
 /* Donate Button */
 .btn-donate {
@@ -213,11 +202,30 @@ input {
   color: #fff;
 }
 
+.donate-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.donation-options {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
 .donate-button-container {
   min-height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 /* Reset Safari's default legend styles */
@@ -239,22 +247,14 @@ input {
 }
 
 /* Safari flexbox alignment fix */
-.donation-selection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  background: #000;
-  width: 100%;
-}
 
 /* Safari label and input spacing fixes */
 .donation-label {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 10px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 100%;
   justify-content: center;
@@ -345,6 +345,14 @@ input {
   #donation-legend {
     font-size: 1.25rem;
   }
+
+  .donation-options {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+  }
 }
 
 /* Style Rules for Desktop Viewport */
@@ -415,6 +423,14 @@ input {
 
   #donation-legend {
     font-size: 1.5rem;
+  }
+
+  .donation-options {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 16px;
   }
 
   .donation-selection {
