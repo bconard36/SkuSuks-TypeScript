@@ -46,71 +46,73 @@ const Donate = () => {
         <div className="donation-selection">
           <form className="donate-form" onSubmit={handleSubmit(onSubmit)}>
             <legend id="donation-legend">Donation Amount</legend>
-            <Controller
-              control={control}
-              name="donation"
-              render={({ field: { onChange, value } }) => (
-                <RadioButton
-                  label="$10"
-                  value="10"
-                  name="donation"
-                  onChange={() => onChange("10")}
-                  checked={value === "10"}
-                />
-              )}
-            />
-            <Controller
-              control={control}
-              name="donation"
-              render={({ field: { onChange, value } }) => (
-                <RadioButton
-                  label="$25"
-                  value="25"
-                  name="donation"
-                  onChange={() => onChange("25")}
-                  checked={value === "25"}
-                />
-              )}
-            />
-            <Controller
-              control={control}
-              name="donation"
-              render={({ field: { onChange, value } }) => (
-                <RadioButton
-                  label="$50"
-                  value="50"
-                  name="donation"
-                  onChange={() => onChange("50")}
-                  checked={value === "50"}
-                />
-              )}
-            />
-            <Controller
-              control={control}
-              name="donation"
-              render={({ field: { onChange, value } }) => (
-                <RadioButton
-                  label="$100"
-                  value="100"
-                  name="donation"
-                  onChange={() => onChange("100")}
-                  checked={value === "100"}
-                />
-              )}
-            />
-            <Controller
-              control={control}
-              name="donation"
-              render={({ field: { onChange, value } }) => (
-                <RadioButton
-                  label="Other"
-                  value="Other"
-                  name="donation"
-                  onChange={() => onChange("Other")}
-                  checked={value === "Other"}
-                />
-              )}
-            />
+            <div className="donation-options">
+              <Controller
+                control={control}
+                name="donation"
+                render={({ field: { onChange, value } }) => (
+                  <RadioButton
+                    label="$10"
+                    value="10"
+                    name="donation"
+                    onChange={() => onChange("10")}
+                    checked={value === "10"}
+                  />
+                )}
+              />
+              <Controller
+                control={control}
+                name="donation"
+                render={({ field: { onChange, value } }) => (
+                  <RadioButton
+                    label="$25"
+                    value="25"
+                    name="donation"
+                    onChange={() => onChange("25")}
+                    checked={value === "25"}
+                  />
+                )}
+              />
+              <Controller
+                control={control}
+                name="donation"
+                render={({ field: { onChange, value } }) => (
+                  <RadioButton
+                    label="$50"
+                    value="50"
+                    name="donation"
+                    onChange={() => onChange("50")}
+                    checked={value === "50"}
+                  />
+                )}
+              />
+              <Controller
+                control={control}
+                name="donation"
+                render={({ field: { onChange, value } }) => (
+                  <RadioButton
+                    label="$100"
+                    value="100"
+                    name="donation"
+                    onChange={() => onChange("100")}
+                    checked={value === "100"}
+                  />
+                )}
+              />
+              <Controller
+                control={control}
+                name="donation"
+                render={({ field: { onChange, value } }) => (
+                  <RadioButton
+                    label="Other"
+                    value="Other"
+                    name="donation"
+                    onChange={() => onChange("Other")}
+                    checked={value === "Other"}
+                  />
+                )}
+              />
+            </div>
             <div className="donate-button-container">
               <button className="btn-donate" type="submit">
                 Donate Now
