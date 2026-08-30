@@ -80,10 +80,10 @@ const NavMenu = () => {
             <Link to="/newdrops">New Drops</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/donate">Donate</Link>
           </li>
           <li>
-            <Link to="/donate">Donate</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
