@@ -73,12 +73,12 @@ const NavMenu = () => {
           <li>
             <Link to="/accessories">Accessories</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/preorder">Pre Orders</Link>
           </li>
           <li>
             <Link to="/newdrops">New Drops</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/donate">Donate</Link>
           </li>
