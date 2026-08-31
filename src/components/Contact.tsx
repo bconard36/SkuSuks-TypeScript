@@ -38,9 +38,8 @@ const Contact = () => {
    */
 
   const onSubmit = (data: ContactFormData) => {
-    // Do something with the data
-    // EmailJS?
-    // Redirect somewhere other than contact form?
+    // TODO: Replace console logging with EmailJS submission
+    // once client provides email service config
     console.log(data);
     setShowSuccess(true);
     reset();
