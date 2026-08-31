@@ -66,6 +66,10 @@ public: houses all public files to be served
 - README.md
 - tsconfig.json
 - tsconfig.node.json
+- tsconfig.node.buildInfo
+- vercel.json
+- vite.config.d.ts
+- vite.config.js
 - vite.config.ts
 
 # Progress Log
