@@ -20,6 +20,9 @@ const Cart = () => {
         >
           View Products on Instagram
         </Link>
+        <Link to="/" className="cart-link">
+          Back to Home
+        </Link>
       </div>
     </>
   );
