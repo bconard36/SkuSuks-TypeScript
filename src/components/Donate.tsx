@@ -56,7 +56,7 @@ const Donate = () => {
       {hasDonated && (
         <div className="donate-confirmation-modal">
           <div className="donate-confirmation-text">
-            <h3 className="donate-confirm-header">Thank You!</h3>
+            <h3 className="donate-confirm-header">Donation Confirmation</h3>
             <p>
               Your donation amount of ${donationAmount} will be processed via
               Instagram.
@@ -68,6 +68,13 @@ const Donate = () => {
               onClick={() => setHasDonated(false)}
             >
               Confirm your Donation
+            </Link>
+            <Link
+              to="/"
+              className="donation-link"
+              onClick={() => setHasDonated(false)}
+            >
+              Cancel & Return Home
             </Link>
           </div>
         </div>
