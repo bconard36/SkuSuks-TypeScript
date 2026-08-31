@@ -72,6 +72,16 @@ const Contact = () => {
           >
             Thanks for reaching out!
           </p>
+          <p
+            className="page-header"
+            style={{
+              color: "#FFF",
+              margin: "20px auto",
+              textAlign: "center",
+            }}
+          >
+            We will be in touch soon.
+          </p>
           <Link
             to="/"
             style={{
@@ -111,7 +121,11 @@ const Contact = () => {
                         value.trim() !== "" || "Name is required.",
                     })}
                   />
-                  {errors.name && <p>{errors.name.message}</p>}
+                  {errors.name && (
+                    <p className="contact-error-message">
+                      {errors.name.message}
+                    </p>
+                  )}
                 </div>
                 <div className="form-group">
                   <label htmlFor="phone">Phone Number</label>
@@ -123,9 +137,25 @@ const Contact = () => {
                       required: "Phone number is required.",
                       validate: (value) =>
                         value.trim() !== "" || "Phone number is required.",
+                      pattern: {
+                        value: /^\+?[1-9]\d{1,14}$/, // Basic E.164 international format
+                        message: "Invalid phone number format",
+                      },
+                      minLength: {
+                        value: 7,
+                        message: "Please enter a valid phone number.",
+                      },
+                      maxLength: {
+                        value: 20,
+                        message: "Phone number cannot exceed 20 characters",
+                      },
                     })}
                   />
-                  {errors.phone && <p>{errors.phone.message}</p>}
+                  {errors.phone && (
+                    <p className="contact-error-message">
+                      {errors.phone.message}
+                    </p>
+                  )}
                 </div>
                 <div className="form-group">
                   <label htmlFor="email">Email</label>
@@ -137,9 +167,17 @@ const Contact = () => {
                       required: "Email is required.",
                       validate: (value) =>
                         value.trim() !== "" || "Email is required.",
+                      pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: "Invalid email address",
+                      },
                     })}
                   />
-                  {errors.email && <p>{errors.email.message}</p>}
+                  {errors.email && (
+                    <p className="contact-error-message">
+                      {errors.email.message}
+                    </p>
+                  )}
                 </div>
                 <div className="form-group">
                   <label htmlFor="message">Message</label>
@@ -154,7 +192,11 @@ const Contact = () => {
                         value.trim() !== "" || "Message is required.",
                     })}
                   ></textarea>
-                  {errors.message && <p>{errors.message.message}</p>}
+                  {errors.message && (
+                    <p className="contact-error-message">
+                      {errors.message.message}
+                    </p>
+                  )}
                 </div>
                 <button id="submit" type="submit">
                   Submit

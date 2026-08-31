@@ -78,6 +78,13 @@ fieldset {
   font-size: 1.1rem;
 }
 
+.contact-error-message {
+  color: #fff;
+  margin: 0 auto;
+  padding-top: 3px;
+  font-style: italic;
+}
+
 /* Submit Button */
 #submit {
   background-color: #fff;
