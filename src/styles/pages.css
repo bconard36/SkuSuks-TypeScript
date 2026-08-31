@@ -177,6 +177,53 @@ input {
   opacity: 0.95;
 }
 
+/* Style Rules for Donate Confirmation Modal */
+.donate-confirmation-modal {
+  display: flex;
+  flex-direction: column;
+  margin: 50% auto;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  opacity: 0.85;
+  border-radius: 8px;
+  border: 2px solid #fff;
+}
+
+.donate-confirm-header {
+  padding-bottom: 5px;
+}
+
+.donate-confirmation-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Libertinus Serif Display", serif;
+  color: #fff;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.donation-link {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 2px;
+}
+
+.donation-link:hover {
+  transform: translateY(-3px);
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease,
+    text-shadow 0.2s ease;
+  background: #3b3b3b;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
 /* Style Rules for Donate Radio Buttons */
 
 /* Donate Button */
@@ -226,6 +273,36 @@ input {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+/* Style Rules for Other Donation Modal */
+.other-donation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.other-donation-container h3 {
+  color: #fff;
+  text-wrap: balance;
+  text-align: center;
+}
+
+.other-donation {
+  padding: 5px;
+  margin-top: 10px;
+  text-align: center;
+  width: 50%;
+}
+
+.error-message-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 
 /* Reset Safari's default legend styles */
