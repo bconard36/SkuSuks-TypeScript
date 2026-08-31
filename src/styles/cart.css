@@ -7,9 +7,9 @@
   min-height: 50vh;
   padding: 32px 20px;
   text-align: center;
-  color: #FFF;
+  color: #fff;
   background: #000;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(38, 1, 1, 0.08);
   margin: 24px auto;
@@ -35,7 +35,8 @@
 .cart-title {
   font-size: clamp(2rem, 3.5vw, 3rem);
   margin: 0 0 12px;
-  color: #FFF;
+  color: #fff;
+  text-wrap: balance;
 }
 
 .cart-text {
@@ -49,15 +50,16 @@
   display: inline-block;
   font-size: clamp(1rem, 1.7vw, 1.2rem);
   font-weight: 600;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
-  border-bottom: 2px solid #FFF;
+  border-bottom: 2px solid #fff;
   padding-bottom: 2px;
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .cart-link:hover {
   color: rgba(255, 255, 255, 0.35);
   border-color: rgba(255, 255, 255, 0.35);
 }
-
