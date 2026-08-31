@@ -29,7 +29,6 @@ const ProductCard = ({ product }: ProductCardProps) => {
       </div>
 
       <h3>{product.name}</h3>
-      <p>{product.price}</p>
       {/* 
             Once Shopify is connected, use below
             <h3>{product.title}</h3>
@@ -39,7 +38,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
                 : "Price Unavailable"}
             </p> */}
       <Link to="/cart">
-        <button className="order-button">Order Now</button>
+        <button className="order-button">View Product</button>
       </Link>
     </div>
   );
