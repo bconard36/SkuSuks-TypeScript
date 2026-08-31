@@ -11,10 +11,14 @@ const Cart = () => {
             alt="SkuSuks logo"
           />
         </div>
-        <h3 className="cart-title">Shopping Cart</h3>
-        <p className="cart-text">Shopify Integration Coming Soon!</p>
-        <Link to="/apparel" className="cart-link">
-          Continue Shopping
+        <h3 className="cart-title">Shopify Integration Coming Soon!</h3>
+        {/* <p className="cart-text">View all products on Instagram</p> */}
+        <Link
+          to="https://www.instagram.com/skusuks/"
+          target="_blank"
+          className="cart-link"
+        >
+          View Products on Instagram
         </Link>
       </div>
     </>
